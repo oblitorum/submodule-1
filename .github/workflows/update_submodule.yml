@@ -19,5 +19,5 @@ jobs:
           client-payload: |-
             {
               "repo": "${{ github.event.repository.name }}",
-              "commit_message": "${{ toJson(github.event.head_commit.message) }}"
+              "commit_message": ${{ toJson(github.event.head_commit.message) }}
             }
