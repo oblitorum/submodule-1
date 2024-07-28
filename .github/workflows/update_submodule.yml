@@ -25,6 +25,6 @@ jobs:
           token: ${{ secrets.PAT }}
           repository: oblitorum/parent
           event-type: update-submodule
-          client-payload:
+          client_payload:
             repo: submodule-1
             commit_message: ${{ env.COMMIT_MESSAGE }}
