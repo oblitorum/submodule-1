@@ -10,5 +10,6 @@ jobs:
       - name: Dispatch update to ssm-client Project
         uses: peter-evans/repository-dispatch@v3
         with:
+          token: ${{ secrets.PAT }}
           repository: oblitorum/parent
           event-type: update-submodule
